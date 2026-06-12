@@ -3,7 +3,6 @@
 A Windows overlay that shows synced lyrics for whatever you're listening to, sitting on top of any application (games, video, etc). Supports Spotify and YouTube Music.
 
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%2F11-blue)
-![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue)
 
 ## Features
 
@@ -15,30 +14,11 @@ A Windows overlay that shows synced lyrics for whatever you're listening to, sit
 - Lyrics cached locally so revisited tracks load instantly
 - Configurable font size, weight, and opacity for active and inactive lines
 
-## Requirements
+## Installation
 
-- Windows 10 or 11
-- Python 3.11+
+Download `LyricOverlay.exe` from the [latest release](https://github.com/FletcherRenn1/lyricoverlay/releases/latest). No Python or any other software required — just run it.
 
-## Running from source
-
-**1. Install dependencies**
-
-```
-pip install -r requirements.txt
-```
-
-**2. Run**
-
-```
-python main.py
-```
-
-**3. Optional — create a desktop shortcut**
-
-```
-python create_shortcut.py
-```
+> Windows Defender may flag the .exe as suspicious. This is a known false positive with self-contained Python executables. You can verify the source code in this repo.
 
 ## Spotify setup
 
@@ -61,21 +41,14 @@ No setup required. Switch to YouTube Music in **Settings → Source**, then play
 
 The hotkey can be changed in **Settings → Hotkeys**. It works even when click-through is active.
 
-## Building a standalone .exe
+## Running from source
 
-Install PyInstaller:
-
-```
-pip install pyinstaller
-```
-
-Build:
+Requires Python 3.11+.
 
 ```
-pyinstaller --onefile --noconsole --name LyricOverlay --collect-all winrt main.py
+pip install -r requirements.txt
+python main.py
 ```
-
-The output will be at `dist/LyricOverlay.exe`. Note that Windows Defender or other antivirus may flag unsigned PyInstaller executables as suspicious — this is a known false positive with PyInstaller.
 
 ## License
 
