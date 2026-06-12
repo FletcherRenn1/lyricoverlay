@@ -54,4 +54,4 @@ The hotkey can be changed in **Settings → Hotkeys**. It works even when click-
 
 ## License
 
-MIT
+GNU General Public License v3.0
