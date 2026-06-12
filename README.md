@@ -1,6 +1,7 @@
 # LyricOverlay
 
 A Windows overlay that shows synced lyrics for whatever you're listening to, sitting on top of any application (games, video, etc). Supports Spotify and YouTube Music.
+I made this because i was annoyed by the fact that most usable options were locked behind subscriptions and paywalls, aswell as very questionable practices behind those.
 
 ![Windows 10/11](https://img.shields.io/badge/Windows-10%2F11-blue)
 
