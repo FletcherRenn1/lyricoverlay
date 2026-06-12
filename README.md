@@ -14,11 +14,22 @@ A Windows overlay that shows synced lyrics for whatever you're listening to, sit
 - Lyrics cached locally so revisited tracks load instantly
 - Configurable font size, weight, and opacity for active and inactive lines
 
-## Installation
+## Getting started
 
-Download `LyricOverlay.exe` from the [latest release](https://github.com/FletcherRenn1/lyricoverlay/releases/latest). No Python or any other software required — just run it.
+### Option 1 — Standalone executable (recommended)
+
+Download `LyricOverlay.exe` from the [latest release](https://github.com/FletcherRenn1/lyricoverlay/releases/latest) and run it. No Python or any other software required.
 
 > Windows Defender may flag the .exe as suspicious. This is a known false positive with self-contained Python executables. You can verify the source code in this repo.
+
+### Option 2 — Run from source
+
+Requires Python 3.11+.
+
+```
+pip install -r requirements.txt
+python main.py
+```
 
 ## Spotify setup
 
@@ -40,15 +51,6 @@ No setup required. Switch to YouTube Music in **Settings → Source**, then play
 | Toggle click-through | `Ctrl+Shift+C` |
 
 The hotkey can be changed in **Settings → Hotkeys**. It works even when click-through is active.
-
-## Running from source
-
-Requires Python 3.11+.
-
-```
-pip install -r requirements.txt
-python main.py
-```
 
 ## License
 
